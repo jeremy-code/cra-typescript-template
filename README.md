@@ -30,4 +30,6 @@ Built with Create React App, it's a template for a Typescript React project with
 
 It has routing through ReactRouter. It uses the Chakra UI library for styling with the option for emotion styling. It has a Navbar, a React helmet head, a footer, and a general layout. It also has the ability to add more proiders, and routes. Ideally, it's scalable and would be a good start for a new project.
 
-It also has some linting and formatting rules through `.eslintrc.js` and `.prettierrc.` I need to work on testing and other stuff, but I feel like that would add too much complexity.
+It also has some linting and formatting rules through `.eslintrc.js` and `.prettierrc.` I need to work on testing and other stuff, but I feel like that would add too much complexity. It does have husky though.
+
+Also it's using React 18. I'm looking to update this readme eventually because it's a bit all over theplace right now.
