@@ -1,7 +1,9 @@
-import React from "react";
-import { Box, Spinner, ChakraProvider } from "@chakra-ui/react";
+import React, { Suspense } from "react";
+import { Spinner, ChakraProvider } from "@chakra-ui/react";
 import { HelmetProvider } from "react-helmet-async";
 import { BrowserRouter } from "react-router-dom";
+
+import theme from "utils/theme";
 
 type AppProviderProps = {
   children: React.ReactNode;
@@ -9,19 +11,13 @@ type AppProviderProps = {
 
 const AppProvider = ({ children }: AppProviderProps) => {
   return (
-    <React.Suspense
-      fallback={
-        <Box>
-          <Spinner />
-        </Box>
-      }
-    >
+    <Suspense fallback={<Spinner />}>
       <HelmetProvider>
-        <ChakraProvider>
+        <ChakraProvider theme={theme}>
           <BrowserRouter>{children}</BrowserRouter>
         </ChakraProvider>
       </HelmetProvider>
-    </React.Suspense>
+    </Suspense>
   );
 };
 

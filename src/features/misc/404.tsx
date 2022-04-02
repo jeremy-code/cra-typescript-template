@@ -9,7 +9,7 @@ const RouteError = () => {
     <>
       <Head title="404" description="Page not found" />
       <Layout>
-        <Container maxW="container.lg" py={10}>
+        <Container py={8}>
           <VStack spacing={10} alignItems="flex-start" h="full">
             <VStack spacing={5} alignItems="flex-start">
               <Heading as="h1" size="4xl" color="red.500">
@@ -22,7 +22,7 @@ const RouteError = () => {
                 Sorry, this page does not exist.
               </Text>
             </VStack>
-            <Button as={Link} to="/">
+            <Button as={Link} variant="brand" to="/">
               Go back to home
             </Button>
           </VStack>

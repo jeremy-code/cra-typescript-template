@@ -1,7 +1,7 @@
 import React from "react";
-import { Navbar, Footer } from "components/Layout";
-
 import { Stack, Box } from "@chakra-ui/react";
+
+import { Navbar, Footer } from "components/Layout";
 
 type LayoutProps = {
   children: React.ReactNode;

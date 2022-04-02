@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ee070873-5365-4bb3-b9c7-6d16938aacc9/deploy-status)](https://app.netlify.com/sites/cra-typescript-template/deploys)
+
 My template for a new project
 
 Built with Create React App, it's a template for a Typescript React project with some basic features.
